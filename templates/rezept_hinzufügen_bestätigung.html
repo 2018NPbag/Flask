@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Meine Webseite</title>
+        <link href="{{url_for('static',filename='myStyl.css')}}"rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Rezept erfolgreich hinzugefügt</h1>
+        </div>
+        <div align=center>
+        <p>
+            <button class="button_rezept_bestätigung" onclick="location.href = '/Rezept_hinzufügen'">erneut Rezept hinzufügen</button>
+            <button class="button_rezept_bestätigung" onclick="location.href = '/'">Home</button>
+            <button class="button_rezept_bestätigung" onclick="location.href = '/detail_{{rezept.rezeptID}}'">Rezept anzeigen</button>
+        </p>
+        </div>
+    </body>
+    
+</html>

@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>Meine Webseite</title>
+        <link href="{{url_for('static',filename='myStyl.css')}}"rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Rezept hinzufügen</h1>
+        </div>
+        
+        
+        <div class="row">
+            <div class="column side">
+        
+            </div>
+            <div class="column middle">
+                <form class=form_rezept_hinzufügen action="{{ url_for('handle_insert') }}" method="post">                
+                <label for="Titel">Titel:</label>
+                <input type="text" id="suchfeld" name="Titel"><br><br>
+                <label for="Rubrik">Rubrik:</label>
+                <div class="dropdown" style="width:200px;">
+                    <select name="Rubrik">
+                        <option value="Salate">Salate</option>
+                        <option value="Suppen">Suppen</option>
+                        <option value="Backwaren">Backwaren</option>
+                        <option value="Pasta">Pasta</option>
+                        <option value="Fleisch">Fleisch</option>
+                        <option value="Kartoffelgerichte">Kartoffelgeichte</option>
+                        <option value="Fisch">Fisch</option>
+                        <option value="Saucen">Saucen</option>
+                        <option value="Reis">Reis</option>
+                        <option value="Dessert">Dessert</option>
+                        <option value="Konserviertes">Konserviertes</option>
+                    </select>
+                </div>
+        
+        
+                <label for="Anleitung">Anleitung:</label>
+                <input type="text" id="suchfeld" name="Anleitung"><br><br>
+                <label for="Schwierigkeit">Schwierigkeit:</label>
+                <div class="dropdown" style="width:200px;">
+                    <select name="Schwierigkeit">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <label for="Zubereitungszeit">Zubereitungszeit:</label>
+                <input type="text" id="suchfeld" name="Zubereitungszeit"><br><br>
+                <label for="Infos">Infos:</label>
+                <input type="text" id="suchfeld" name="Infos"><br><br>
+                <label for="Personen">Anzahl Personen:</label>
+                <input type="number" id="suchfeld" name="Personen"><br><br>
+                <label for="Zutaten">Zutaten (mit Kommas abtrennen):</label>
+                <input type="text" id="suchfeld" name="Zutaten"><br><br>
+                <label for="Bild">Bild-URL (nun Onlinebilder möglich):</label>
+                <input type="text" id="suchfeld" name="Bild"><br><br>
+                <input class="button_rezept_hinzufügen" type="submit" value="Rezept hinzufügen">
+                </form>
+            </div>
+            <div class="column side">
+                <button class="button_zzS" onclick="location.href = '/'">zurück zur Startseite</button>
+            </div>  
+        </div>
+    </body>
+    
+</html>

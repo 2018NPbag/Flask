@@ -1,0 +1,158 @@
+.column {
+    float: left;
+    padding: 10px;    
+}
+
+.column.side {
+    width: 10%;
+}
+
+.column.middle {
+    width: 80%;    
+}
+
+.row:after {
+        content: "";
+        display: table;
+        clear: both;
+}
+
+.box {
+    float: left;
+    width: 40%;
+    padding: 50px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.anleitung {
+    font-size: 1.2em;
+    padding-right: 225px;
+    padding-left: 225px;
+    padding-top: 70px;
+}    
+    
+.rubriken {
+    list-style-position: inside;    
+    font-size: 1.25em;
+    text-decoration: none;
+}
+
+.rubriken li{
+    line-height: 1.25;
+    list-style-position: inside;
+    margin-left: 200px;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.rezepte {    
+    list-style-position: inside;    
+    font-size: 1.2em;
+    text-decoration: none;
+    padding-top: 30px;
+}
+
+.rezepte li {
+    list-style-position: inside;
+    margin-left: 550px;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #C4C4CC;   
+}
+
+.topnav p{
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 5px 14px;
+    text-decoration: none;
+    margin-left: 150px;
+}
+
+body {
+    background: rgba(240,232,205,0.3);
+    background-attachment: fixed;
+    font-family: Helvetica, Verdana, sans-serif;
+    margin:0;
+   
+}
+
+head {
+    font-family: Helvetica, Verdana, sans-serif;
+    background-color: rgba(243,159,24,1);
+    text-align: center;
+    color: black;
+    font-size: 2em;
+    padding: 20px;
+}
+
+.header {
+    background-color: rgba(243,159,24,0.7);
+    text-align: center;
+    color: black;
+    font-size: 1.5em;
+    padding: 20px;
+    font-family: Helvetica, Verdana, sans-serif;
+}    
+
+img {
+    float: left;
+    width: 40%;
+    padding-top: 30px;    
+}    
+
+h1 {   
+    text-align: center;
+    color: black;
+    font-size: 2em;    
+}
+
+b {   
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+#titelhome {
+    
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-left: 000px;
+}    
+
+p {
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+#titeldetail {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-right: 30px;
+    padding-top: 30px;
+} 
+
+
+#startseite {
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 1.25em;
+    text-decoration: none; 
+}
+
+.button_home {
+    font-size: 20px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1), 0 6px 20px 0 rgba(0,0,0,19);
+    width: 250px
+}

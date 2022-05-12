@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Meine Webseite</title>
+        <link href="{{url_for('static',filename='myStyl.css')}}"rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="header">
+            <h1>{{titel}}</h1>
+        </div>
+        
+        <div class="rezepte">
+            {%for rezept in rezepte%}
+                <li><a href="/detail_{{rezept.rezeptID}}">{{rezept.Titel}}</a></li>   
+            {%endfor%}
+        </div>
+        <button class="button_zzS" onclick="location.href = '/'">zurück zur Startseite</button>
+        
+    </body>
+    
+</html>

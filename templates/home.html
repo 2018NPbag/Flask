@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>Meine Webseite</title>
+        <link href="{{url_for('static',filename='myStyl.css')}}"rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Rezepte der Kanti</h1>
+        </div>
+        <div class="topnav">
+             
+                 <p1 onclick="location.href = '/Rezept_hinzufügen'">Rezept hinzufügen</p1>
+                 <p1 onclick="location.href = '/Suche'">Suche</p1>
+             
+        </div>
+        <div class="row">
+            <div class="column side">
+                 
+            </div>   
+            <div class="column middle">
+                <p id="titelhome"> Rubriken</p>
+                
+                <div class="responsive">
+                    <div class="container">
+                        <a target= "_blank" herf="https://www.fraenkische-rezepte.de/wp-content/uploads/2020/02/Gemischter-Salat.jpeg-700x525.jpg">
+                            <img src="https://www.fraenkische-rezepte.de/wp-content/uploads/2020/02/Gemischter-Salat.jpeg-700x525.jpg" alt="Salat">
+                        </a>
+                        <div class="text">Salate</div>
+                    </div>
+                </div>
+                    
+                    
+                    
+                </div>
+
+                <div class="rubriken">
+                    <li class= "liste_rubriken"><a href="/Rubrik_Salate">Salate</a></li>
+                    <li class= "liste_rubriken"><a href="/Rubrik_Suppen">Suppen</a></li>
+                    <li class= "liste_rubriken"><a href="/Rubrik_Backwaren">Backwaren</a></li>
+                    <li class= "liste_rubriken"><a href="/Rubrik_Pasta">Pasta</a></li>
+                    <li class= "liste_rubriken"><a href="/Rubrik_Fleisch">Fleisch</a></li>
+                    <li class= "liste_rubriken"><a href="/Rubrik_Kartoffelgerichte">Kartoffelgerichte</a></li>
+                    <li class= "liste_rubriken"><a href="/Rubrik_Fisch">Fisch</a></li>
+                    <li class= "liste_rubriken"><a href="/Rubrik_Saucen">Saucen</a></li>
+                    <li class= "liste_rubriken"><a href="/Rubrik_Reis">Reis</a></li>
+                    <li class= "liste_rubriken"><a href="/Rubrik_Dessert">Dessert</a></li>
+                    <li class= "liste_rubriken"><a href="/Rubrik_Konserviertes">Konserviertes</a></li>
+                </div>       
+            </div>
+            <div class="column side">
+            
+            </div>
+        </div>                
+    </body>
+    
+</html>

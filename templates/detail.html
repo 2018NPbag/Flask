@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>{{rezept.Titel}}</title>
+        <link href="{{url_for('static',filename='myStyl.css')}}"rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="header">
+            <h1>{{rezept.Titel}}</h1>
+        </div>
+        
+        <div class="topnav">
+            <p>Zubereitungszeit: {{rezept.Schwierigkeit}}</p>
+            <p>Schwierigkeit: {{rezept.Schwierigkeit}}</p>
+            <p>Infos: {{rezept.Infos}}</p> 
+            <p>Personen: {{rezept.Personen}}</p>
+        </div>
+        
+        <p id="titeldetail">Beschreibung</p>
+        
+        
+        <div class="row">
+            <div class="column side">
+            
+            </div>   
+            <div class="column middle">
+                <div class="clearfix">
+                    <div class="box">
+                        <b>Zutaten</b>
+                        {%for zutaten in zutaten%}
+                            <p>{{zutaten.Zutaten}}</p>
+                        {%endfor%}
+                    </div>
+                    <div="box">
+                        <img src= "{{rezept.Bildname}}" alt= "{{rezept.Bildname}}">
+                    </div>
+                 
+                     <div class="anleitung">
+                        <b>Anleitung</b>
+                        <p>{{rezept.Anleitung}}</p>
+                     </div>
+                 </div>
+             </div>
+             <div class="column side">
+                <button class="button_zzR" onclick="location.href = '/Rubrik_{{rezept.Rubrik}}'">zurück zu Rubriken</button>
+                <button class="button_zzS" onclick="location.href = '/'">zurück zur Startseite</button>
+        
+
+             </div>
+        </div>
+        
+        
+    </body>
+    
+</html>
