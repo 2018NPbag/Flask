@@ -1,9 +1,13 @@
 .container {
+    margin: 5px;
     border:1px solid #ccc;
-      position: relative;
-      
+    float: left;
+    width: 180px;       
 }
 
+.container:hover {
+    border: 1px solid #777;
+}
 
 .responsive {
     padding: 0 6px;
@@ -11,20 +15,20 @@
     width: 50%;
 }
 
-.containe img {
-    
-    width: 500px;
-    height: auto;
+.container img {    
+    width: 180px;
+    height: 135px;
+    object-fit: cover;
     
 }
 
-
-
-.text {
+.button_rubrik {
   background-color: #4CAF50;
   color: white;
   padding: 15px;
+  width: 180px;
   text-align: center;
+  border: none;
 }
 
 .column {
@@ -40,6 +44,10 @@
     width: 80%;    
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .row:after {
         content: "";
         display: table;
@@ -48,9 +56,19 @@
 
 .box {
     float: left;
-    width: 40%;
-    padding: 50px;
+    width: 50%;
+    padding: 10px;
 }
+
+.box img {
+    float: left;
+    width: 420px;
+    height: auto;
+    object-fit: cover;
+    
+}
+
+
 
 .clearfix::after {
     content: "";
@@ -151,11 +169,7 @@ head {
     font-family: Helvetica, Verdana, sans-serif;
 }    
 
-img {
-    float: left;
-    width: 40%;
-    padding-top: 30px;    
-}    
+
 
 h1 {   
     text-align: center;
@@ -164,9 +178,17 @@ h1 {
 }
 
 b {   
-    font-size: 1.25em;
+    font-size: 1.50em;
     font-weight: bold;
     padding-right: 10px;
+    padding-left: 10px;
+}
+
+b2 {   
+    font-size: 1.50em;
+    font-weight: bold;
+    padding-right: 10px;
+    
 }
 
 #titelhome {
@@ -184,7 +206,7 @@ p {
 
 #titeldetail {
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.75em;
     font-weight: bold;
     padding-right: 30px;
     padding-top: 30px;
@@ -228,14 +250,9 @@ p {
     font-size: 20px;
 }
 
-.butten_rubrik {
-    margin-top: 100px;
-    margin-bottom: 100px;
-    margin-right: 50px;
-    maging-left: 50px;
-    font-size: 1.25em;
+
     
-}
+
 
 .button_rezept_bestätigung {
     font-size: 25;
