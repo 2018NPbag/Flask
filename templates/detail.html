@@ -2,14 +2,16 @@
     <head>
         <title>{{rezept.Titel}}</title>
         <link href="{{url_for('static',filename='myStyl.css')}}"rel="stylesheet" type="text/css"/>
-    </head>
+
+   </head>
     <body>
         <div class="header">
             <h1>{{rezept.Titel}}</h1>
         </div>
         
         <div class="topnav">
-            <p>Zubereitungszeit: {{rezept.Schwierigkeit}}</p>
+            
+            <p>Zubereitungszeit: {{rezept.Zubereitungszeit}}</p>
             <p>Schwierigkeit: {{rezept.Schwierigkeit}}</p>
             <p>Infos: {{rezept.Infos}}</p> 
             <p>Personen: {{rezept.Personen}}</p>
