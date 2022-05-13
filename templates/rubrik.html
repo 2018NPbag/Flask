@@ -7,13 +7,31 @@
         <div class="header">
             <h1>{{titel}}</h1>
         </div>
+        <div class="row">
+            <div class="column side">
+                 
+            </div>   
+            <div class="column middle">
+                <p id="titelhome"> Rubriken</p>
+                
+                <div class="box2">
+                    {%for rezept in rezepte%}
+                        <div class="container">                        
+                            <a target= "_blank" herf="{{rezept.Bildname}}">
+                                <img src="{{rezept.Bildname}}">
+                            </a>                      
+                            <button class="button_rubrik2" onclick="location.href = '/detail_{{rezept.rezeptID}}'">{{rezept.Titel}}</button>                        
+                        </div>
+                    {%endfor%}
+                </div>
+            </div>
+            
+            <div class="column side">
+            <button class="button_zzS" onclick="location.href = '/'">zurück zur Startseite</button>    
+            </div>
+                    
+
         
-        <div class="rezepte">
-            {%for rezept in rezepte%}
-                <li><a href="/detail_{{rezept.rezeptID}}">{{rezept.Titel}}</a></li>   
-            {%endfor%}
-        </div>
-        <button class="button_zzS" onclick="location.href = '/'">zurück zur Startseite</button>
         
     </body>
     

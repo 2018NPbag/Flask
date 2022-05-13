@@ -2,7 +2,7 @@
     margin: 5px;
     border:1px solid #ccc;
     float: left;
-    width: 180px;       
+    width: 220px;       
 }
 
 .container:hover {
@@ -16,8 +16,8 @@
 }
 
 .container img {    
-    width: 180px;
-    height: 135px;
+    width: 220px;
+    height: 170px;
     object-fit: cover;
     
 }
@@ -26,8 +26,20 @@
   background-color: #4CAF50;
   color: white;
   padding: 15px;
-  width: 180px;
+  width: 220px;
   text-align: center;
+  font-size: 1.2em;
+  border: none;
+}
+
+.button_rubrik2 {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px;
+  width: 220px;
+  height: 100px;
+  text-align: center;
+  font-size: 1.2em;
   border: none;
 }
 
@@ -68,6 +80,11 @@
     
 }
 
+.box {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
 
 
 .clearfix::after {
