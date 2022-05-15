@@ -16,27 +16,27 @@
 }
 
 .container img {    
-    width: 220px;
+    width: 218px;
     height: 170px;
     object-fit: cover;
     
 }
 
 .button_rubrik {
-  background-color: #4CAF50;
-  color: white;
+  background-color: rgba(243,159,24,0.7);
+  color: black;
   padding: 15px;
-  width: 220px;
+  width: 218px;
   text-align: center;
   font-size: 1.2em;
   border: none;
 }
 
 .button_rubrik2 {
-  background-color: #4CAF50;
-  color: white;
+  background-color: rgba(243,159,24,0.7);
+  color: black;
   padding: 15px;
-  width: 220px;
+  width: 218px;
   height: 100px;
   text-align: center;
   font-size: 1.2em;
@@ -66,6 +66,7 @@
         clear: both;
 }
 
+/*für Box in dem die Zutaten und das Bild der Rezepte sich befinden*/
 .box {
     float: left;
     width: 50%;
@@ -80,12 +81,19 @@
     
 }
 
-.box {
+/*Box für die Rubriken, gibt die Möglichkeit die Bilder nach wunsch anzuordnen */
+.box2 {
     float: left;
-    width: 50%;
+    width: 100%;
     padding: 10px;
 }
 
+/*Box in der sich die Box der Rezepte befindet*/
+.box3 {
+    float: left;
+    width: 100%;
+    padding: 10px;
+}
 
 .clearfix::after {
     content: "";
@@ -93,40 +101,48 @@
     display: table;
 }
 
+.anleitung {
+    position: absolut;
+    left: 10%;
+    top: 100%;
+    
+}
+
 .anleitung p {
     font-size: 1.2em;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
     padding-top: 10px;
 }    
-    
-.rubriken {
-    list-style-position: inside;    
-    font-size: 1.25em;
-    text-decoration: none;
-}
-
-.rubriken li{
-    line-height: 1.25;
-    list-style-position: inside;
-    margin-left: 200px;
-    font-size: 1.2em;
-    text-decoration: none;
-}
-
-.rezepte {    
-    list-style-position: inside;    
-    font-size: 1.2em;
-    text-decoration: none;
-    padding-top: 30px;
-}
-
-.rezepte li {
-    list-style-position: inside;
-    margin-left: 550px;
-    font-size: 1.2em;
-    text-decoration: none;
-}
+/*    
+# .rubriken {
+#     list-style-position: inside;    
+#     font-size: 1.25em;
+#     text-decoration: none;
+# }
+# 
+# .rubriken li{
+#     line-height: 1.25;
+#     list-style-position: inside;
+#     margin-left: 200px;
+#     font-size: 1.2em;
+#     text-decoration: none;
+# }
+# 
+# .rezepte {    
+#     list-style-position: inside;    
+#     font-size: 1.2em;
+#     text-decoration: none;
+#     padding-top: 30px;
+# }
+# 
+# .rezepte li {
+#     list-style-position: inside;
+#     margin-left: 550px;
+#     font-size: 1.2em;
+#     text-decoration: none;
+# }
+*/
 
 .topnav {
     overflow: hidden;
@@ -152,8 +168,11 @@
     text-decoration: none;
     padding: 20px 120px;
     margin-left: 20%;
+    font-size: 1.2em;
     
 }
+
+
 
 .topnav p1:hover {
     background-color: #51565C;
@@ -194,13 +213,15 @@ h1 {
     font-size: 2em;    
 }
 
+/*Titel Anleitung*/
 b {   
     font-size: 1.50em;
     font-weight: bold;
     padding-right: 10px;
-    padding-left: 10px;
+    padding-left: 20px;
 }
 
+/*Titel Zutaten*/
 b2 {   
     font-size: 1.50em;
     font-weight: bold;
@@ -219,6 +240,14 @@ b2 {
 p {
     font-size: 1.2em;
     text-decoration: none;
+    
+}
+
+/*Text auf der Homeseite*/
+.text {
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2em;
 }
 
 #titeldetail {
@@ -243,10 +272,21 @@ p {
     width: 250px;
 }
 
+/*
 .suchfeld {
+    font-size: 1.2em;
+}
+
+.suchfeld2 {
     margin-left: 30px;
     margin-top: 30px;
-    font-size: 22px;
+    font-size: 50px;
+}
+*/
+
+textarea {
+    width: 50%;
+    height:200px;
 }
 
 .button_suche {
@@ -257,7 +297,7 @@ p {
     margin-left: 30px;
     margin-top: 30px;
     margin-bottom: 30px;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .button_zzR {
@@ -267,18 +307,14 @@ p {
     font-size: 20px;
 }
 
-
-    
-
-
 .button_rezept_bestätigung {
     font-size: 25;
 }
 
 .form_rezept_hinzufügen {
     margin-left: 30px;
-    margin-top: 30px;
-    font-size: 22px;
+    margin-top: 50px;
+    font-size: 20px;
 }
 
 .dropdown {

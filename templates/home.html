@@ -5,12 +5,18 @@
     </head>
     <body>
         <div class="header">
-            <h1>Rezepte der Kanti</h1>
+            <h1>Rezeptesammlug</h1>
         </div>
         <div class="topnav">
              
                  <p1 onclick="location.href = '/Rezept_hinzufügen'">Rezept hinzufügen</p1>
-                 <p1 onclick="location.href = '/Suche'">Suche</p1>
+                 <p1>
+                     <form class="suchfeld" action="{{ url_for('handle_data') }}" method="post">
+                         <label for="suchfeld">Rezept:</label>
+                         <input type="text" id="suchfeld" name="suchfeld"><br><br>
+                     </form>
+                 </p1>
+                 
              
         </div>
         <div class="row">
@@ -18,9 +24,17 @@
                  
             </div>   
             <div class="column middle">
-                    <p id="titelhome"> Rubriken</p>
-                
-                
+            
+                    <p id="titelhome">Willkommen</p>
+                    
+                    <div class="text">                        
+                        <p>Herzlich Willkommen auf unserer Rezepte Seite.<br> Hier finden sie verschiede Rezepte nach jedem Geschmack. Probiere sie sie aus oder fügen sie neue Rezepte hinzu. So haben sie ein Rezeptebuch, dass sie überall mitnehmen können. Gleichzeitig profitieren sie von den Rezepten anderer. 
+Diese Westseite ist ein Projekt von Grossmann Amelie, Hager Dario und Zahner Birgitta, deren Ziel es war eine gesamte Webseite zu Programmieren und zu Gestallten.<br> 
+Viel Spass und Guten Appetit</p>
+                    </div>
+                    
+                    <p id="titelhome"> Kategorien</p>
+                    
                     <div class="container">                        
                         <a target= "_blank" herf="https://www.fraenkische-rezepte.de/wp-content/uploads/2020/02/Gemischter-Salat.jpeg-700x525.jpg">
                             <img src="https://www.fraenkische-rezepte.de/wp-content/uploads/2020/02/Gemischter-Salat.jpeg-700x525.jpg" alt="Salat">

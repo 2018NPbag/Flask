@@ -5,14 +5,15 @@
     </head>
     <body>
         <div class="header">
+            
             <h1>{{titel}}</h1>
         </div>
         <div class="row">
             <div class="column side">
-                 
+                      
             </div>   
             <div class="column middle">
-                <p id="titelhome"> Rubriken</p>
+                <p id="titelhome"> Rezepte</p>
                 
                 <div class="box2">
                     {%for rezept in rezepte%}
@@ -24,10 +25,11 @@
                         </div>
                     {%endfor%}
                 </div>
+                <button class="button_zzS" onclick="location.href = '/'">zurück zur Startseite</button>
             </div>
             
             <div class="column side">
-            <button class="button_zzS" onclick="location.href = '/'">zurück zur Startseite</button>    
+               
             </div>
                     
 

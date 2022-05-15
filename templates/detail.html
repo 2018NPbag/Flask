@@ -22,26 +22,30 @@
         
         <div class="row">
             <div class="column side">
-            
+                
             </div>   
-            <div class="column middle">                
+            <div class="column middle">
+                <div class="box3">
                     <div class="box">
                         <b2>Zutaten</b2>
                         {%for zutaten in zutaten%}
                             <p>{{zutaten.Zutaten}}</p>
                         {%endfor%}
                     </div>
+                    
                     <div class="box">
                         <img src= "{{rezept.Bildname}}" alt= "{{rezept.Bildname}}">
                     </div>
-                    <div class="anleitung">
-                        <b>Anleitung</b>
-                        <p>{{rezept.Anleitung}}</p>
-                    </div>                 
+                </div>                    
+                <div class="anleitung">
+                    <b>Anleitung</b>
+                    <p>{{rezept.Anleitung}}</p>
+                </div> 
+                <button class="button_zzR" onclick="location.href = '/Rubrik_{{rezept.Rubrik}}'">zurück zu Rubriken</button>
+                <button class="button_zzS" onclick="location.href = '/'">zurück zur Startseite</button>    
              </div>
              <div class="column side">
-                <button class="button_zzR" onclick="location.href = '/Rubrik_{{rezept.Rubrik}}'">zurück zu Rubriken</button>
-                <button class="button_zzS" onclick="location.href = '/'">zurück zur Startseite</button>
+                
              </div>
         </div>
         
