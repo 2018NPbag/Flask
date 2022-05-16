@@ -275,6 +275,7 @@ p {
 /*
 .suchfeld {
     font-size: 1.2em;
+    margin-block-end: 0em;
 }
 
 .suchfeld2 {
