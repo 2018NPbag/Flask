@@ -17,11 +17,11 @@
                
                     
                 <div class="text">                        
-                    <p>Hier können sie eigene Rezepte hinzufügen. Bitte füllen sie dazu bitte ALLE Felder aus.</p>
+                    <p>Hier können Sie eigene Rezepte hinzufügen. Bitte füllen Sie dazu bitte ALLE Felder aus.</p>
                     </div>
                     
                 <form class=form_rezept_hinzufügen action="{{ url_for('handle_insert') }}" method="post">                
-                <label for="Titel">Titel:(Schreiben sie hier den Namen ihres Rezeptes hinein)</label>
+                <label for="Titel">Titel: (Schreiben Sie hier den Namen Ihres Rezeptes hinein)</label>
                 <textarea type="text" id="suchfeld" name="Titel" style="height:22px"></textarea><br><br>
                 <label for="Rubrik">Rubrik:</label>
                 <div class="dropdown" style="width:200px;">
@@ -41,7 +41,7 @@
                 </div>
         
         
-                <label for="Anleitung">Anleitung:(Bitte fügen sie hier die Anleitung ein)<br></label>
+                <label for="Anleitung">Anleitung: (Bitte fügen Sie hier die Anleitung ein)<br></label>
                 <textarea type="text" id="suchfeld2" name="Anleitung"></textarea><br><br>
                 <label for="Schwierigkeit">Schwierigkeit:</label>
                 <div class="dropdown" style="width:200px;">
@@ -55,13 +55,13 @@
                 </div>
                 <label for="Zubereitungszeit">Zubereitungszeit:</label>
                 <input type="text" id="suchfeld" name="Zubereitungszeit"><br><br>
-                <label for="Infos">Infos:(Fals ihr Rezept Vegetarisch,Vegan, Gluten Frei oder anderstweitige Information hat können sie diese hier hin schreiben)</label>
+                <label for="Infos">Infos: (Falls Ihr Rezept vegetarisch, vegan, glutenfrei oder andersweitige Informationen hat, können Sie diese hier hineinschreiben)</label>
                 <input type="text" id="suchfeld" name="Infos"><br><br>
                 <label for="Personen">Anzahl Personen:</label>
                 <input type="number" id="suchfeld" name="Personen"><br><br>
-                <label for="Zutaten">Zutaten (mit Kommas ohne Leerzeichen abtrennen):</label>
+                <label for="Zutaten">Zutaten: (mit Kommas ohne Leerzeichen abtrennen)</label>
                 <input type="text" id="suchfeld" name="Zutaten"><br><br>
-                <label for="Bild">Bild-URL (nun Onlinebilder möglich, fürgen sie dafür den URL des Bildes ein<br>z.b. https://forum.garten-pur.de/galerie/albums/userpics/26595/DSCI0075.JPG):</label>
+                <label for="Bild">Bild-URL: (nur Onlinebilder möglich, fügen Sie dafür die URL des Bildes ein,<br>z.B. https://forum.garten-pur.de/galerie/albums/userpics/26595/DSCI0075.JPG)</label>
                 <input type="text" id="suchfeld" name="Bild"><br><br>
                 <input class="button_rezept_hinzufügen" type="submit" value="Rezept hinzufügen">
                 </form>
